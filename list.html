@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>CGDB</title>
+</head>
+<body>
+    <section class="header">
+        <nav class="nav-bar">
+            <div class="nav-bar__logo-image">
+                <a href="main.html">
+                    <img src="recursos/imagenes/logo/Raccoon-logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="nav-bar__menu">
+                <a href="main.html">
+                    <h3 class="nav-bar__nav-title">Explore</h3>
+                </a>
+                <a href="list.html">
+                    <h3 class="nav-bar__nav-title">My list</h3>
+                </a>
+                <a class="nav-bar__user-icon" href="profile.html">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </div>
+        </nav>
+    </section>
+    <section class="explore">
+        <div class="explore__header">
+            <div class="explore__title">
+                <i class="fa-solid fa-heart"></i>
+                <h3>Favorites</h3>
+            </div>
+            <div class="explore__search">
+                <form method="post">
+                    <input type="text" placeholder="Search">
+                    <a class="explore__search-button" href="product_detail.html">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </form>
+            </div>
+        </div>
+        <div class="explore__list">
+            <ul class="list-items">
+                <li class="list-item__item">
+                    <a href="game_detail.html">
+                        <img class="item__image" src="recursos/imagenes/IMG1.jpg" alt="IMG1">
+                        <h4 class="item__name">A little to the left</h4>
+                    </a>
+                </li>
+                <li class="list-item__item">
+                    <a href="game_detail.html">
+                        <img class="item__image" src="recursos/imagenes/IMG2.jpg" alt="IMG2">
+                        <h4 class="item__name">Minami Lane</h4>
+                    </a>
+                </li>
+                <li class="list-item__item">
+                    <a href="game_detail.html">
+                        <img class="item__image" src="recursos/imagenes/IMG3.jpg" alt="IMG3">
+                        <h4 class="item__name">Sugardew Island</h4>
+                    </a>
+                </li>
+                <li class="list-item__item">
+                    <a href="game_detail.html">
+                        <img class="item__image" src="recursos/imagenes/IMG4.jpg" alt="IMG4">
+                        <h4 class="item__name">Moonstone Island</h4>
+                    </a>
+                </li>
+                <li class="list-item__item"> 
+                    <a href="game_detail.html">
+                        <img class="item__image" src="recursos/imagenes/IMG1.jpg" alt="IMG1">
+                        <h4 class="item__name">A little to the left</h4>
+                    </a>
+                </li>
+            </ul>
+            <div class="list__page-number">
+                <a href="main.html">
+                    <h4 class="page-number__number">1</h4>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+<footer>
+    <section class="contenedor3">
+        <p class="rights">@2024 CozyGamerDB All Rights Reserve</p>
+    </section>
+    <script src="https://kit.fontawesome.com/8fd88ba57c.js" crossorigin="anonymous"></script>
+</footer>
+</html>

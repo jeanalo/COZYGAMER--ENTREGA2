@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    color: #DCF2F1;
+}
+
+body {
+    background: rgb(220, 242, 241);
+    background: radial-gradient(circle, rgba(220, 242, 241, 1) 10%, rgba(127, 199, 217, 1) 46%, rgba(54, 84, 134, 1) 100%);
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem; /* Ajustar según tu preferencia */
+}
+
+header {
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70rem;
+    height: 6rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.menu__botones {
+    height: 15vh;
+    display: flex;
+    position: absolute;
+    left: 24rem;
+    bottom: 1rem;
+}
+
+.menu__botones .btn {
+    width: 8rem;
+    height: 2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: rgb(217, 171, 128);
+    color: black;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+
+
+
+img {
+    width: 6rem;
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.contenedor1 h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+}
+
+.contenedor1 h2 {
+    opacity: 70%;
+}
+
+.contenedor1 {
+    flex-direction: column;
+    height: 500px;
+    width: 1000px;
+    border-radius: 2rem;
+    background-color: rgb(54, 84, 134);
+    margin: auto;
+    position: relative;
+}
+
+.contenedor1__titulito1 {
+    margin: auto;
+    font-size: 2rem;
+    color: white;
+}
+
+.contenedor1__titulito2 {
+    margin: auto;
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+}
+
+.contenedor2 {
+    display: flex;
+    justify-content: space-around;
+    width: 62.5rem;
+}
+
+#izquierda {
+    width: 35%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#izquierda__tituloconsola {
+    height: 50px;
+    color: white;
+}
+
+#izquierda__descripcionconsola, #izquierda__descripcionperiodico  {
+    font-size: 0.9rem;
+    opacity: 50%;
+    color: white;
+}
+
+
+#derecha {
+    width: 45%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+#derecha__tituloconsola {
+    color: white;
+    font-size: 1.3rem;
+}
+
+
+
+.BotonPrincipal {
+    height: 75px;
+    width: 100%;
+    position: relative;
+}
+
+.BotonPrincipal__join {
+    width: 12rem;
+    height: 3rem;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: rgb(217, 171, 128);
+    position: relative;
+    font-size: 1.5rem;
+    left: 33.7rem;
+    bottom: 1.3rem;
+    color: black;
+}
+
+.AboutUs {
+    height: 90%;
+    width: 100%;
+    background-color: rgb(54, 84, 134);
+    margin: auto;
+    
+   
+    
+}
+
+.AboutUs__Titulito {
+    font-size: 3rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.AboutUs__Cuerpo, .AboutUs__Subtitulo, .AboutUs__InfoPablo, .AboutUs__InfoJean  {
+    text-align: left;
+}
+
+.AboutUs__Cuerpo {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.AboutUs__Subtitulo {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+}
+
+.AboutUs__InfoPablo {
+    float: left;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    border-bottom: solid rgba(255, 255, 255, 0.733);
+}
+
+.AboutUs__InfoJean {
+    float: right;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    border-bottom: solid rgba(255, 255, 255, 0.733);
+}
+
+footer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(15, 16, 53);
+}

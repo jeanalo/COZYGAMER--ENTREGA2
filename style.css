@@ -1,0 +1,336 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    color: #DCF2F1;
+}
+
+/* 
+==========================================================================
+============================= Nav styles ================================
+*/
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #7FC7D9;
+}
+
+.nav-bar {
+    width: 100%;
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar__logo-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar__logo-image a {
+    width: fit-content;
+    height: fit-content;
+}
+
+.nav-bar__logo-image img {
+    width: 96px;
+}
+
+.nav-bar__menu {
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar__nav-title {
+    font-family: "Nunito sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.nav-bar__user-icon i {
+    font-size: 1.5rem;
+}
+
+.header__for-you {
+    padding: 0 3rem;
+    position: relative;
+    top: 50px;
+    background-color: #DCF2F1;
+    border-radius: 40px;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.for-you__title {
+    align-self: flex-start;
+    padding: 1rem;
+    color: #0F1035;
+    font-family: "Nunito sans", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.swiper{
+    width: 457.86px;
+    padding: 2rem 0 3rem 0;
+}
+
+.swiper-slide{
+    width: fit-content;
+    height: 272px;
+    background-color: #0F1035;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.game-content a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.game-content h3{
+    display: flex;
+    font-family: "Nunito sans", sans-serif;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.game-image {
+    height: 214px;
+}
+
+/* 
+==========================================================================
+********** THIS SECTION IS USED BY FAVORITES AND EXPLORE PAGE ************
+============================= Explore Section ============================
+*/
+
+.explore {
+    padding: 5rem 3rem;
+    background-color: #365486;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore__header {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.explore__title {
+    display: flex;
+    align-items: center;
+}
+
+.explore__title i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.explore__title h3{
+    padding: 0 1rem;
+    font-family: "Nunito sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.explore__search form {
+    display: flex;
+    align-items: center;
+}
+
+.explore__search input {
+    color: #0F1035;
+    padding: 0.2rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+}
+
+.explore__search-button {
+    padding: 0rem 0.5rem;
+}
+
+.explore__list {
+    width: 956px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.list-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.list-item__item {
+    margin: 1rem 0;
+    background-color: #0F1035;
+    width: 459px;
+    height: 272px;
+    list-style: none;
+}
+
+.list-item__item a {
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-item__item a:hover {
+    opacity: 0.6;
+    transition: 0.3s ease;
+}
+
+.item__name {
+    padding: 1rem 0;
+    text-decoration-line: underline;
+    font-weight: 400;
+}
+
+.item__image{
+    width: 100%;
+    height: 215px;
+}
+
+.list__page-number {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.page-number__number {
+    transition: 0.1s ease;
+    opacity: 0.7;
+    margin: 0 0.5rem;
+    font-weight: 300;
+}
+
+.page-number__number:hover {
+    opacity: 1;
+    transition: 0.1s ease;
+}
+
+/* 
+==========================================================================
+============================= End Explore Section ========================
+*/
+
+
+/* 
+==========================================================================
+============================ Game Detail Section =========================
+*/
+
+.main-frame {
+    margin: 3rem;
+    width: 1200px;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+    background-color: #DCF2F1;
+    border-radius: 2rem;
+}
+
+.main-frame__info-section {
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-section__game-details {
+    height: 320px;
+    background-color: #0F1035;
+    padding: 3rem;
+    border-radius: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-section__game-description--vertical {
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.info-section__game-description--vertical h3{
+    font-family: "Nunito sans", sans-serif;
+    padding-right: 0.5rem;
+    font-weight: 700;
+}
+
+.info-section__game-description--horizontal {
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    scrollbar-color: #7FC7D9 #0F1035;
+}
+
+.info-section__game-description--horizontal h3{
+    font-family: "nutino sans", sans-serif;
+    padding: 0.5rem 0;
+    font-weight: 700;
+}
+
+.actions {
+    display: flex;
+}
+
+.actions__button {
+    transition: 0.3s ease;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: none;
+    border-radius: 1.5rem;background: rgb(85,112,157);
+    background: rgb(114,138,177);
+    background: linear-gradient(180deg, rgba(114,138,177,1) 0%, rgba(45,73,120,1) 12%, rgba(54,84,134,1) 71%, rgba(43,66,105,1) 100%);
+    cursor: pointer;
+}
+
+.actions__button:hover {
+    opacity: 0.6;
+    transition: 0.3s ease;
+}
+
+.actions__button p {
+    padding-left: 0.5rem;
+    font-family: "Nunito sans", sans-serif;
+    font-weight: 900;
+}
+
+footer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 3.125rem; 
+    background-color: rgb(15, 16, 53);
+}
