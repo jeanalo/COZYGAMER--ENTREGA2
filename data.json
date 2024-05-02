@@ -1,110 +1,132 @@
 
-    [
+[
     {
-        "ID": 1,
-        "Title": "Everdream Valley",
-        "Estudio": "Mooneaters",
-        "Descripcion": "Rural summer holidays with a touch of magic.",
-        "Imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/2fa23d9e3400c2209664cbbb1b754c94d3f858be.png?raw=true"
+        "id": 1,
+        "titulo": "Everdream Valley",
+        "estudio": "Mooneaters",
+        "descripcion": "Rural summer holidays with a touch of magic.",
+        "imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/2fa23d9e3400c2209664cbbb1b754c94d3f858be.png?raw=true",
+        "link": "https://store.steampowered.com/app/1403650/Everdream_Valley/"
     },
     {
-        "ID": 2,
-        "Title": "Fae Farm",
-        "Estudio": "Phoenix Labs",
-        "Descripcion": "Escape the fairy tale you've always dreamed of at Fae Farm. A role-playing and simulation game for up to 4 people. Create, farm, and decorate your farm, and use spells to explore the enchanting island of Azoria. You'll forge new bonds with the islanders and discover the magic of the fairies.",
-        "Imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header%20(1).jpg?raw=true"
+        "id": 2,
+        "titulo": "Fae Farm",
+        "estudio": "Phoenix Labs",
+        "descripcion": "Escape the fairy tale you've always dreamed of at Fae Farm. A role-playing and simulation game for up to 4 people. Create, farm, and decorate your farm, and use spells to explore the enchanting island of Azoria. You'll forge new bonds with the islanders and discover the magic of the fairies.",
+        "imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header%20(1).jpg?raw=true",
+        "link": "https://store.steampowered.com/app/2230110/Fae_Farm/"
     },
     {
-        "ID": 3,
-        "Title": "Garden Life: A Cozy Simulator",
-        "Estudio": "Stillalive Studios",
-        "Descripcion": "Use proper gardening techniques, express your creativity, and experience the serenity that comes with growing your own garden.",
-        "Imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header%20(10).jpg?raw=true"
+        "id": 3,
+        "titulo": "Garden Life: A Cozy Simulator",
+        "estudio": "Stillalive Studios",
+        "descripcion": "Use proper gardening techniques, express your creativity, and experience the serenity that comes with growing your own garden.",
+        "imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header%20(10).jpg?raw=true",
+        "link": "https://store.steampowered.com/app/1915380/Garden_Life_A_Cozy_Simulator/"
     },
     {
-        "ID": 4,
-        "Title": "Tinker Lands",
-        "Estudio": ["CodeManu", "Endless Coffee"],
-        "Descripcion": "Explore, craft, and fight your way through unexplored islands! Tinkerlands is an Action-RPG game where you can build your base, craft powerful tools and weapons to survive. Even use magic!",
-        "Imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header%20(11).jpg?raw=true"
+        "id": 4,
+        "titulo": "Tinker Lands",
+        "estudio": ["CodeManu", "Endless Coffee"],
+        "descripcion": "Explore, craft, and fight your way through unexplored islands! Tinkerlands is an Action-RPG game where you can build your base, craft powerful tools and weapons to survive. Even use magic!",
+        "imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header%20(11).jpg?raw=true",
+        "link": "https://store.steampowered.com/app/2617700/Tinkerlands/"
     },
     {
-        "ID": 5,
-        "Title": "Palia",
-        "Estudio": "Singularity 6 Corporation",
-        "Descripcion": "Palia is a new and colorful world made expressly for you. Craft, cook, fish and farm with friends as you live the life of your dreams and discover a fascinating adventure, full of varied characters and a mystery to solve.",
-        "Imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header%20(13).jpg?raw=true"
+        "id": 5,
+        "titulo": "Palia",
+        "estudio": "Singularity 6 Corporation",
+        "descripcion": "Palia is a new and colorful world made expressly for you. Craft, cook, fish and farm with friends as you live the life of your dreams and discover a fascinating adventure, full of varied characters and a mystery to solve.",
+        "imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header%20(13).jpg?raw=true",
+        "link": "https://store.steampowered.com/app/2707930/Palia/"
     },
     {
-        "ID": 6,
-        "Title": "Bandle Tale: A League of Legends Story",
-        "Estudio": "Lazy Bear Games",
-        "Descripcion": "Bandle Tale: A League of Legends Story is a crafting RPG set in the quirky world of Bandle City. When a party goes awry, the portals that connect your home collapse and chaos ensues! Restore the portals to gather Bandle using your weaving magic and your backpack house.",
-        "Imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header%20(14).jpg?raw=true"
+        "id": 6,
+        "titulo": "Bandle Tale: A League of Legends Story",
+        "estudio": "Lazy Bear Games",
+        "descripcion": "Bandle Tale: A League of Legends Story is a crafting RPG set in the quirky world of Bandle City. When a party goes awry, the portals that connect your home collapse and chaos ensues! Restore the portals to gather Bandle using your weaving magic and your backpack house.",
+        "imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header%20(14).jpg?raw=true",
+        "link": "https://store.steampowered.com/app/1759380/Bandle_Tale_A_League_of_Legends_Story/"
     },
     {
-        "ID": 7,
-        "Title": "Moonstone Island",
-        "Estudio": "Studio Supersoft",
-        "Descripcion": "Moonstone Island is a life simulation and creature collecting game set in an open world with over 100 islands to explore. Make friends, brew potions, collect spirits, and test your strength in card fights to complete your training as an alchemist.",
-        "Imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header%20(16).jpg?raw=true"
+        "id": 7,
+        "titulo": "Moonstone Island",
+        "estudio": "Studio Supersoft",
+        "descripcion": "Moonstone Island is a life simulation and creature collecting game set in an open world with over 100 islands to explore. Make friends, brew potions, collect spirits, and test your strength in card fights to complete your training as an alchemist.",
+        "imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header%20(16).jpg?raw=true",
+        "link": "https://store.steampowered.com/app/1658150/Moonstone_Island/"
     },
     {
-        "ID": 8,
-        "Title": "Harvest Moon: One World",
-        "Estudio": ["Natsume Inc.", "Appci"],
-        "Descripcion": "Trek across beaches, the desert, and even a volcano in the latest entry into the long-running Harvest Moon series! The Harvest Goddess has gone missing, and it's up to you to help bring her back! Along the way, you'll come across cows, sheep, camels, and even reindeer!",
-        "Imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header%20(3).jpg?raw=true"
+        "id": 8,
+        "titulo": "Harvest Moon: One World",
+        "estudio": ["Natsume Inc.", "Appci"],
+        "descripcion": "Trek across beaches, the desert, and even a volcano in the latest entry into the long-running Harvest Moon series! The Harvest Goddess has gone missing, and it's up to you to help bring her back! Along the way, you'll come across cows, sheep, camels, and even reindeer!",
+        "imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header%20(3).jpg?raw=true",
+        "link": "https://store.steampowered.com/app/1246870/Harvest_Moon_One_World/"
     },
     {
-        "ID": 9,
-        "Title": "Whisker Waters",
-        "Estudio": "Underbite Games",
-        "Descripcion": "Whisker Waters is the ultimate adventure RPG when it comes to combining light fantasy and the art of fishing in a fascinating world. As a player, you'll create and play as your own cat character as you embark on a quirky fishing trip like never before.",
-        "Imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header%20(4).jpg?raw=true"
+        "id": 9,
+        "titulo": "Whisker Waters",
+        "estudio": "Underbite Games",
+        "descripcion": "Whisker Waters is the ultimate adventure RPG when it comes to combining light fantasy and the art of fishing in a fascinating world. As a player, you'll create and play as your own cat character as you embark on a quirky fishing trip like never before.",
+        "imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header%20(4).jpg?raw=true",
+        "link": "https://store.steampowered.com/app/2171570/Whisker_Waters/"
     },
     {
-        "ID": 10,
-        "Title": "Rusty's Retirement",
-        "Estudio": "Mister Morris Games",
-        "Descripcion": "A relaxing incremental farming simulator that you can control from the bottom of the screen while you do other things.",
-        "Imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header%20(5).jpg?raw=true"
+        "id": 10,
+        "titulo": "Rusty's Retirement",
+        "estudio": "Mister Morris Games",
+        "descripcion": "A relaxing incremental farming simulator that you can control from the bottom of the screen while you do other things.",
+        "imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header%20(5).jpg?raw=true",
+        "link": "https://store.steampowered.com/app/2666510/Rustys_Retirement/"
     },
     {
-        "ID": 11,
-        "Title": "Tales of the Shire: A Lord of the Rings™ Game",
-        "Estudio": "Wētā Workshop",
-        "Descripcion": "Welcome home, hobbit! Live the comfortable life of a hobbit in the wonderful and peaceful Shire. Discover, decorate and share in this idyllic corner of Middle-earth. Join friendly hobbits and familiar faces awaiting your arrival in Tales of the Shire: A Lord of the Rings™ game.",
-        "Imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header%20(6).jpg?raw=true"
+        "id": 11,
+        "titulo": "Tales of the Shire: A Lord of the Rings™ Game",
+        "estudio": "Wētā Workshop",
+        "descripcion": "Welcome home, hobbit! Live the comfortable life of a hobbit in the wonderful and peaceful Shire. Discover, decorate and share in this idyllic corner of Middle-earth. Join friendly hobbits and familiar faces awaiting your arrival in Tales of the Shire: A Lord of the Rings™ game.",
+        "imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header%20(6).jpg?raw=true",
+        "link": "https://store.steampowered.com/app/2016460/Tales_of_the_Shire_A_The_Lord_of_The_Rings_Game/"
     },
     {
-        "ID": 12,
-        "Title": "Dinosaur Park – Primeval Zoo",
-        "Estudio": "upjers",
-        "Descripcion": "A sensation: a real T-Rex that has just hatched from its egg - in your own dinosaur zoo game! Create a fantastical animal world of prehistoric creatures and impress your park visitors.",
-        "Imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header%20(7).jpg?raw=true"
+        "id": 12,
+        "titulo": "Dinosaur Park - Primeval Zoo",
+        "estudio": "upjers",
+        "descripcion": "A sensation: a real T-Rex that has just hatched from its egg - in your own dinosaur zoo game! Create a fantastical animal world of prehistoric creatures and impress your park visitors.",
+        "imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header%20(7).jpg?raw=true",
+        "link": "https://store.steampowered.com/app/1844240/Dinosaur_Park__Primeval_Zoo/"
     },
     
     {
-        "ID": 13,
-        "Title": "Beach Buggy Racing 2: Island Adventure",
-        "Estudio": "Vector Unit",
-        "Descripcion": "Beach Buggy Racing 2: Island Adventure is an action-packed, mayhem-filled kart racing game with split-screen competitions and customizable game rules.",
-        "Imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header%20(8).jpg?raw=true"
+        "id": 13,
+        "titulo": "Beach Buggy Racing 2: Island Adventure",
+        "estudio": "Vector Unit",
+        "descripcion": "Beach Buggy Racing 2: Island Adventure is an action-packed, mayhem-filled kart racing game with split-screen competitions and customizable game rules.",
+        "imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header%20(8).jpg?raw=true",
+        "link": "https://store.steampowered.com/app/1230800/Beach_Buggy_Racing_2_Island_Adventure/"
     },
     {
-        "ID": 14,
-        "Title": "Cozy Grove",
-        "Estudio": "Spry Fox LLC",
-        "Descripcion": "Come to Cozy Grove and enjoy the day-to-day camping on this enchanted island. Wander through the forest, discover its secrets and help your ghost neighbors. Show off your DIY skills and fulfill your duties as a spectral scout to bring color and joy back to Cozy Grove!",
-        "Imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header%20(9).jpg?raw=true"
+        "id": 14,
+        "titulo": "Cozy Grove",
+        "estudio": "Spry Fox LLC",
+        "descripcion": "Come to Cozy Grove and enjoy the day-to-day camping on this enchanted island. Wander through the forest, discover its secrets and help your ghost neighbors. Show off your DIY skills and fulfill your duties as a spectral scout to bring color and joy back to Cozy Grove!",
+        "imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header%20(9).jpg?raw=true",
+        "link": "https://store.steampowered.com/app/1458100/Cozy_Grove/"
     },
     {
-        "ID": 15,
-        "Title": "Pine Hearts",
-        "Estudio": "Hyper Luminal Games",
-        "Descripcion": "Pine Hearts is a cute narrative adventure set in the bucolic setting of Pine Hearts Caravan Park. Get ready to explore nature while discovering objects, hiking trails, and unraveling all the secrets that lie around you.",
-        "Imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header.jpg?raw=true"
-    } ]
-    
-   
+        "id": 15,
+        "titulo": "Minami Lane",
+        "estudio": ["Doot", "Blibloop"],
+        "descripcion": "Welcome to Minami Lane! Build your own street in this tiny cozy, casual management sim! Unlock and customize buildings, manage your shops, and maximize the happiness of your villagers to complete quests and fill your street with love!",
+        "imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header%20(9).jpg?raw=true",
+        "link": "https://store.steampowered.com/app/2678990/Minami_Lane/"
+    },
+    {
+        "id": 16,
+        "titulo": "Pine Hearts",
+        "estudio": "Hyper Luminal Games",
+        "descripcion": "Pine Hearts is a cute narrative adventure set in the bucolic setting of Pine Hearts Caravan Park. Get ready to explore nature while discovering objects, hiking trails, and unraveling all the secrets that lie around you.",
+        "imagen": "https://github.com/jeanalo/COZYGAMER--ENTREGA2/blob/main/recursos/imagenes/Games/header.jpg?raw=true",
+        "link": "https://store.steampowered.com/app/1781010/Pine_Hearts/"
+    } 
+]    
