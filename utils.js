@@ -4,13 +4,40 @@ export const getData = async () => {
     return juegos
 }
 
-class juego {
-    constructor(ID, Descripcion, Studio, Titulo, Imagen){
-        this.ID = ID;
-        this.Descripcion = Descripcion;
-        this.Studio = Studio;
-        this.Titulo = Titulo;
-        this.Imagen = Imagen;
+export class Juego {
+    #id;
+    #nodo;
+    descripcion;
+    estudio;
+    titulo;
+    imagen;
 
+    constructor(id, descripcion, estudio, titulo, imagen){
+        this.#id = id;
+        this.descripcion = descripcion;
+        this.estudio = estudio;
+        this.titulo = titulo;
+        this.imagen = imagen;
+    }
+
+    renderGameCard(){
+        const card = document.createElement('li');
+        card.classList.add('list-item__item');
+
+        const img = document.createElement('img');
+        img.classList.add('item__image');
+        img.src = this.imagen;
+        img.alt = this.titulo;
+
+        const title = document.createElement('h4');
+        title.classList.add('item__name');
+        title.textContent = this.titulo;
+
+        card.appendChild(img);
+        card.appendChild(title);
+
+        this.#nodo = card;
+
+        return card;
     }
 }
