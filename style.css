@@ -242,40 +242,47 @@
     align-items: center;
 }
 
+.info-section__game-image {
+    width: 460px;
+    height: 215px;
+}
+
 .info-section__game-details {
+    display: flex;
+    flex-direction: column;
     height: 320px;
     background-color: #0F1035;
     padding: 3rem;
     border-radius: 2.5rem;
-    display: flex;
-    flex-direction: column;
 }
 
-.info-section__game-description--vertical {
+.info-section__game-description--horizontal {
     padding: 0.5rem 0;
+    gap: 0.5rem;
     display: flex;
     align-items: center;
 }
 
-.info-section__game-description--vertical h3{
+.info-section__section-title{
     font-family: "Nunito sans", sans-serif;
     padding-right: 0.5rem;
     font-weight: 700;
 }
 
-.info-section__game-description--horizontal {
+.info-section__game-description--vertical {
     padding: 0.5rem 0;
+    gap: 0.5rem;
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
     scrollbar-color: #7FC7D9 #0F1035;
 }
 
-.info-section__game-description--horizontal h3{
+/* .info-section__game-description--vertical h3{
     font-family: "nutino sans", sans-serif;
     padding: 0.5rem 0;
     font-weight: 700;
-}
+} */
 
 .actions {
     display: flex;

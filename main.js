@@ -10,9 +10,10 @@ const displayCards = (juegos) => {
     const list = document.querySelector('.list-items');
 
     for (const juego of juegos) {
-        const juegoInstance = new Juego(juego.id, juego.descripcion, juego.estudio, juego.titulo, juego.imagen);
+        const juegoInstance = new Juego(juego.id, juego.descripcion, juego.estudio, juego.titulo, juego.imagen, juego.link);
         const card = juegoInstance.renderGameCard(); 
         list.appendChild(card);
+        juegoInstance.addEventListeners();
     }
 };
 
@@ -22,7 +23,7 @@ const displayForYou = (juegos) => {
     for (let i = 0; i < 3; i++) {
         const rand = Math.floor(Math.random() * juegos.length);
         const selection = juegos[rand];
-        const juegoInstance = new Juego(selection.id, selection.descripcion, selection.estudio, selection.titulo, selection.imagen);
+        const juegoInstance = new Juego(selection.id, selection.descripcion, selection.estudio, selection.titulo, selection.imagen, selection.link);
         const card = juegoInstance.renderGameCard();
 
         const slide = document.createElement('div');
@@ -30,6 +31,7 @@ const displayForYou = (juegos) => {
 
         slide.appendChild(card);
         swiperWrapper.appendChild(slide);
+        juegoInstance.addEventListeners();
     }
 }
 
