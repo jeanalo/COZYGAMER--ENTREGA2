@@ -4,7 +4,7 @@ const displayFavorites = async () => {
     const juegos = await getData();
     const listItems = document.querySelector('.list-items');
 
-    for (let i = 0; i < 7; i++) {
+    for (let i = 0; i < 6; i++) {
         const rand = Math.floor(Math.random() * juegos.length);
         const selection = juegos[rand];
         const juegoInstance = new Juego(selection.id, selection.descripcion, selection.estudio, selection.titulo, selection.imagen, selection.link);
