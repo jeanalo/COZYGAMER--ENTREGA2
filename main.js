@@ -30,7 +30,7 @@ const displayForYou = (juegos) => {
 
         // Ignorar las partes de slide y reemplazar para insertar en el list-items
         const slide = document.createElement('div');
-        slide.classList.add('swsiper-slide');
+        slide.classList.add('swiper-slide');
 
         // insertar en list-items 
         slide.appendChild(card);
