@@ -88,6 +88,15 @@ form {
     padding: 0.125rem 1.25rem; 
 }
 
+.form__contra {
+    border: none;
+    border: 0.1rem solid rgb(54, 84, 134); 
+    border-radius: 0.9rem; 
+    background-color: transparent;
+    padding: 0.125rem 1.25rem; 
+
+}
+
 #form__log {
     width: 11rem;
     position: absolute;
