@@ -1,4 +1,5 @@
 import { Juego, getData } from './utils.js';
+import { obtenerUsuarioEnSesion } from './session.js';
 
 var swiper = new Swiper(".mySwiper", {
     pagination: {
@@ -42,6 +43,12 @@ const displayForYou = (juegos) => {
 }
 
 const render = async () => {
+    const usuarioActivo = obtenerUsuarioEnSesion();
+    if (!usuarioActivo) {
+        window.location.href = 'index.html';
+        return;
+    }
+
     const juegos = await getData();
     
     displayCards(juegos);
