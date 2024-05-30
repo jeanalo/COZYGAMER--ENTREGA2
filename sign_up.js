@@ -1,26 +1,16 @@
-import {registrar} from "./session.js";
+import { registrarUsuario, obtenerUsuarios} from "./session.js"; 
+const formulario = document.getElementById('registro')
 
-const render = () => {
-    const registro =  document.querySelector ("#registro");
+formulario.addEventListener("submit", registrarUsuario);
 
-    registro.addEventListener("submit", (e) => {
-        e.preventDefault();
-        
-        const correo = e.target.correo.value;
-        const contrasena = e.target.contrasena.value;
-        const confirmarContrasena = e.target.confirmarContrasena.value;
+console.log(obtenerUsuarios)
 
-        try {
-            registrar(correo, contrasena, confirmarContrasena);
-            alert("Usuario registrado exitosamente");
-            window.location.href = "./index.html";
 
-        } catch (error) {
-            alert(error.message);
-            
-        }
 
-    });
-};
 
-document.addEventListener("DOMContentLoaded", render);
+
+
+
+
+
+

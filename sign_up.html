@@ -34,7 +34,7 @@
                     <div class="contenedor2">
 
                         <div class="info">
-                        <form id="registro" >
+                        <form id="registro" method="post">
 
                                 <h1>Create Account</h1><br>
 
@@ -42,7 +42,7 @@
                             <div>
                     
                                 <label >First name</label><br>
-                                <input class="FirstAndLast__Campos" type="text" placeholder="">
+                                <input class="FirstAndLast__Campos" type="text"  id="nombre" placeholder="">
                     
                             </div>
             
@@ -51,7 +51,7 @@
                             <div>
                     
                                 <label  >Last name</label><br>
-                                <input class="FirstAndLast__Campos" type="text" placeholder="">
+                                <input class="FirstAndLast__Campos" type="text"  id="apellido" placeholder="">
                     
                             </div>
                         </section>
@@ -61,7 +61,7 @@
                             <div>
                     
                                 <label  >Email</label><br>
-                                <input class="FirstAndLast__Campos__email" type="email" placeholder="">
+                                <input class="FirstAndLast__Campos__email" type="email"  id="email" placeholder="">
                     
                             </div>
 
@@ -70,17 +70,17 @@
                             <div>
                     
                                 <label>Password</label><br>
-                                <input class="FirstAndLast__Campos__password" type="Password" placeholder="">
+                                <input class="FirstAndLast__Campos__password" type="Password" id="contrasena" placeholder="">
                     
                             </div>
             
                             <br>
                             
                             <div>
-                                <a href="main.html">
-                                    <p id="Submit">Login</p>
+                               
+                                <input type="submit" class="boton" value="registrar">
                                     <!-- <input id="Submit" type="submit" value="LOGIN" ><br> -->
-                                </a>
+            
                     
                             </div>
 

@@ -38,9 +38,22 @@ header {
     height: 15vh;
     display: flex;
     position: absolute;
-    left: 24rem;
+    left: 13rem;
     bottom: 1rem;
+    width: 80rem;
 }
+
+
+#cerrarSesion {
+    width: 8rem;
+    height: 2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: rgb(217, 171, 128);
+    color: black;
+}
+
+
 
 .menu__botones .btn {
     width: 8rem;

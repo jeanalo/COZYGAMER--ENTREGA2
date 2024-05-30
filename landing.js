@@ -1,21 +1,20 @@
 import { obtenerUsuarioEnSesion, logout } from "./session.js";
 
-const render = () => {
-  const usuarioActivo = obtenerUsuarioEnSesion();
+document.addEventListener("DOMContentLoaded", () => {
+    const usuarioActivoElement = document.getElementById("usuarioActivo");
+    const cerrarSesionButton = document.getElementById("cerrarSesion");
 
-  if (!usuarioActivo) {
-    window.location.href = "./index.html";
-    // redireccionar al login cuando el usuario no ha ingresado, ES EL CODIFGO DE ARRIBA
-  }
+    const usuarioEnSesion = obtenerUsuarioEnSesion();
+    if (usuarioEnSesion) {
+        usuarioActivoElement.textContent = `Bienvenido, ${usuarioEnSesion.name} ${usuarioEnSesion.lastName}`;
+        cerrarSesionButton.style.display = "block"; // Mostrar botón de cerrar sesión si hay un usuario en sesión
+    } else {
+        usuarioActivoElement.textContent = "Bienvenido a CozyGamer DB";
+        cerrarSesionButton.style.display = "none"; // Ocultar botón de cerrar sesión si no hay usuario en sesión
+    }
 
-  const body = document.querySelector("#usuarioActivo");
-  body.innerHTML = "Bienvenido " + usuarioActivo.correo;
-
-  const cerrarSesion = document.querySelector("#cerrarSesion");
-  cerrarSesion.addEventListener("click", () => {
-    logout();
-    window.location.href = "./index.html";
-  });
-};
-
-document.addEventListener("DOMContentLoaded", render);
+    cerrarSesionButton.addEventListener("click", () => {
+        logout();
+        window.location.href = "index.html";
+    });
+});

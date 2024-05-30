@@ -215,3 +215,8 @@ footer {
 .rights {
     font-size: 0.7rem;
 }
+@media (max-width:900px){
+    .imagen{
+        display: none;
+    }
+}
