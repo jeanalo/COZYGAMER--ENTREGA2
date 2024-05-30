@@ -1,20 +1,11 @@
 import { obtenerUsuarioEnSesion, logout } from "./session.js";
 
-document.addEventListener("DOMContentLoaded", () => {
-    const usuarioActivoElement = document.getElementById("usuarioActivo");
-    const cerrarSesionButton = document.getElementById("cerrarSesion");
+const render = () => {
+    const usuarioActivo = obtenerUsuarioEnSesion();
 
-    const usuarioEnSesion = obtenerUsuarioEnSesion();
-    if (usuarioEnSesion) {
-        usuarioActivoElement.textContent = `Bienvenido, ${usuarioEnSesion.name} ${usuarioEnSesion.lastName}`;
-        cerrarSesionButton.style.display = "block"; // Mostrar botón de cerrar sesión si hay un usuario en sesión
-    } else {
-        usuarioActivoElement.textContent = "Bienvenido a CozyGamer DB";
-        cerrarSesionButton.style.display = "none"; // Ocultar botón de cerrar sesión si no hay usuario en sesión
+    if(usuarioActivo) {
+        window.location.href = "/main.html";
     }
+};
 
-    cerrarSesionButton.addEventListener("click", () => {
-        logout();
-        window.location.href = "index.html";
-    });
-});
+document.addEventListener("DOMContentLoaded", render);
