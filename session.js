@@ -39,6 +39,19 @@ export const registrarUsuario = (event) => {
     }
 };
 
+export const modificarUsuario = (modifiedUser) => {
+    const usuarios = obtenerUsuarios();
+    for(const usuraio of usuarios){
+        if(usuraio.id === modifiedUser.id){
+            usuraio.name = modifiedUser.name;
+            usuraio.lastName = modifiedUser.lastName;
+            usuraio.email = modifiedUser.email;
+            usuraio.password = modifiedUser.password;
+            localStorage.setItem(USUARIOS_KEY, JSON.stringify(usuarios));
+        }
+    }
+};
+
 export const login = (correo, contrasena) => {
     const usuarios = obtenerUsuarios();
     for (const usuario of usuarios) {
