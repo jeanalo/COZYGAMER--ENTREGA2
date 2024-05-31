@@ -138,6 +138,8 @@
     font-weight: 700;
 }
 
+/* =================== FOOTER ===================== */
+
 footer {
     width: 100%;
     background-color: rgb(15, 16, 53);
@@ -146,50 +148,38 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    }
-    
-    .contacts-container {
+}
+
+.contacts-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-bottom: 1rem;
-    }
-    
-    .contact-info {
+}
+
+.contact-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin: 0 2rem;
-    }
-    
-    .AboutUs__Subtitulo {
+}
+
+.AboutUs__Subtitulo {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: rgb(220,242,241);
-    }
-    
-    .AboutUs__InfoPablo,
-    .AboutUs__InfoJean {
+}
+
+.AboutUs__InfoPablo,
+.AboutUs__InfoJean {
     font-size: 1.2rem;
     border-bottom: solid rgba(255, 255, 255, 0.733);
-    color: rgb(220,242,241);
-    }
+}
 
-    .AboutUs__Titulito{
-
-        color: rgb(15,16,53);
-    }
-    
-    .AboutUs__ContactUs{
-        color: rgb(15,16,53);
-    }
-    .contenedor3 {
+.contenedor3 {
     width: 100%;
     text-align: center;
-    }
-    
-    .rights {
+}
+
+.rights {
     font-size: 1.2rem;
-    color: rgb(220,242,241);
-    }
+}

@@ -114,6 +114,7 @@ form {
 #form__log:hover {
     background-color: rgb(54, 84, 134);
     color: rgb(220, 242, 241);
+    cursor: pointer;
 }
 
 #form__pass {

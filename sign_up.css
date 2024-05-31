@@ -120,8 +120,6 @@ form {
 }
 
 #Submit {
-    position: absolute;
-    left: 20px;
     border-radius: 0.563rem;
     height: 26px;
     border: none;
@@ -131,6 +129,7 @@ form {
 }
 
 #Submit:hover {
+    cursor: pointer;
     background-color: rgb(127, 199, 217);
     color: rgb(220, 242, 241);
 }
