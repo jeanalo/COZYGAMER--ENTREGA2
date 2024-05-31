@@ -82,6 +82,7 @@
 .information {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 2rem;
     flex-wrap: wrap;
 }
@@ -110,13 +111,16 @@
 
 .actions {
     display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .actions__button {
+    font-family: "Nunito sans", sans-serif;
+    font-weight: 700;
+    color: #DCF2F1;
     transition: 0.3s ease;
     opacity: 1;
-    display: flex;
-    align-items: center;
     padding: 0.5rem 1rem;
     margin: 0 0.5rem;
     border: none;
@@ -131,14 +135,10 @@
     transition: 0.3s ease;
 }
 
-.actions__button p {
-    color: #DCF2F1;
-    padding-left: 0.5rem;
-    font-family: "Nunito sans", sans-serif;
-    font-weight: 700;
-}
+/* =================== FOOTER ===================== */
 
 footer {
+    color: #DCF2F1;
     width: 100%;
     background-color: rgb(15, 16, 53);
     padding: 2rem 0;
@@ -146,50 +146,38 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    }
-    
-    .contacts-container {
+}
+
+.contacts-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-bottom: 1rem;
-    }
-    
-    .contact-info {
+}
+
+.contact-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin: 0 2rem;
-    }
-    
-    .AboutUs__Subtitulo {
+}
+
+.AboutUs__Subtitulo {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: rgb(220,242,241);
-    }
-    
-    .AboutUs__InfoPablo,
-    .AboutUs__InfoJean {
+}
+
+.AboutUs__InfoPablo,
+.AboutUs__InfoJean {
     font-size: 1.2rem;
     border-bottom: solid rgba(255, 255, 255, 0.733);
-    color: rgb(220,242,241);
-    }
+}
 
-    .AboutUs__Titulito{
-
-        color: rgb(15,16,53);
-    }
-    
-    .AboutUs__ContactUs{
-        color: rgb(15,16,53);
-    }
-    .contenedor3 {
+.contenedor3 {
     width: 100%;
     text-align: center;
-    }
-    
-    .rights {
+}
+
+.rights {
     font-size: 1.2rem;
-    color: rgb(220,242,241);
-    }
+}

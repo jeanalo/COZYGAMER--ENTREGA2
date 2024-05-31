@@ -362,55 +362,48 @@ footer {
     font-size: 1rem;
     }
     
-    footer {
-        width: 100%;
-        background-color: rgb(15, 16, 53);
-        padding: 2rem 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        }
-        
-        .contacts-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 1rem;
-        }
-        
-        .contact-info {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 0 2rem;
-        }
-        
-        .AboutUs__Subtitulo {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-        }
-        
-        .AboutUs__InfoPablo,
-        .AboutUs__InfoJean {
-        font-size: 1.2rem;
-        border-bottom: solid rgba(255, 255, 255, 0.733);
-        }
-    
-        .AboutUs__Titulito{
-    
-            color: rgb(15,16,53);
-        }
-        
-        .AboutUs__ContactUs{
-            color: rgb(15,16,53);
-        }
-        .contenedor3 {
-        width: 100%;
-        text-align: center;
-        }
-        
-        .rights {
-        font-size: 1.2rem;
-        }
+/* =================== FOOTER ===================== */
+
+footer {
+    width: 100%;
+    background-color: rgb(15, 16, 53);
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 2rem;
+}
+
+.AboutUs__Subtitulo {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.AboutUs__InfoPablo,
+.AboutUs__InfoJean {
+    font-size: 1.2rem;
+    border-bottom: solid rgba(255, 255, 255, 0.733);
+}
+
+.contenedor3 {
+    width: 100%;
+    text-align: center;
+}
+
+.rights {
+    font-size: 1.2rem;
+}
