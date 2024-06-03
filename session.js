@@ -41,12 +41,13 @@ export const registrarUsuario = (event) => {
 
 export const modificarUsuario = (modifiedUser) => {
     const usuarios = obtenerUsuarios();
-    for(const usuraio of usuarios){
-        if(usuraio.id === modifiedUser.id){
-            usuraio.name = modifiedUser.name;
-            usuraio.lastName = modifiedUser.lastName;
-            usuraio.email = modifiedUser.email;
-            usuraio.password = modifiedUser.password;
+    for(const usuario of usuarios){
+        if(usuario.id === modifiedUser.id){
+            usuario.name = modifiedUser.name;
+            usuario.lastName = modifiedUser.lastName;
+            usuario.email = modifiedUser.email;
+            usuario.password = modifiedUser.password;
+            usuario.favoritos = modifiedUser.favoritos;
             localStorage.setItem(USUARIOS_KEY, JSON.stringify(usuarios));
         }
     }
@@ -75,6 +76,14 @@ export const obtenerUsuarioEnSesion = () => {
         }
     }
     return null;
+};
+
+export const obtenerFavoritosUsuario = () => {
+    const usuario = obtenerUsuarioEnSesion();
+    if (!usuario) {
+        return [];
+    }
+    return usuario.favoritos;
 };
 
 export const logout = () => {

@@ -1,6 +1,12 @@
 import { Juego, getJuegoById } from './utils.js';
+import { obtenerUsuarioEnSesion } from './session.js';
 
 const render = async () => {
+    if (!obtenerUsuarioEnSesion()) {
+        window.location.href = 'index.html';
+        return;
+    }
+
     const params = new URLSearchParams(window.location.search);
     const id = params.get("id");
 
