@@ -45,7 +45,7 @@ body {
 }
 
 .login__text-inputs {
-    width: 30rem     ;
+    width: 30rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,6 +65,7 @@ body {
 }
 
 .form__campos {
+    color: black;
     width: 80%;
     border: none;
     border: 0.1rem solid rgb(54, 84, 134); 
@@ -74,6 +75,7 @@ body {
 }
 
 .form__contra {
+    color: black;
     width: 80%;
     border: none;
     border: 0.1rem solid rgb(54, 84, 134); 

@@ -19,6 +19,11 @@ const actualizarDataDisplay = (user) => {
 
 const render = async () => {
     
+    if (!obtenerUsuarioEnSesion()) {
+        window.location.href = 'index.html';
+        return;
+    }
+
     // Se carga la info del usuario activo por primera vez
     const usuarioActivo = obtenerUsuarioEnSesion();    
     actualizarDataDisplay(usuarioActivo);

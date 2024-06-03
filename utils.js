@@ -1,3 +1,5 @@
+import { obtenerFavoritosUsuario, obtenerUsuarioEnSesion, modificarUsuario } from "./session.js";
+
 export const getData = async () => {
     const response = await fetch('https://raw.githubusercontent.com/jeanalo/COZYGAMER--ENTREGA2/main/data.json');
     const juegos = await response.json();
@@ -147,6 +149,24 @@ export class Juego {
         const buttonFav = document.createElement('div');
         buttonFav.classList.add('actions__button');
         this.#nodoBotonFavoritos = buttonFav;
+
+        this.#nodoBotonFavoritos.addEventListener('click', () => {
+            console.log('Favorito');
+            const usuario = obtenerUsuarioEnSesion();
+            const favoritos = obtenerFavoritosUsuario();
+
+            // Check if the game is already in the favorites list, with SPLICE it deletes the already existing one in case it 
+            // is already in the list, and if it is not, it adds it to the list with PUSH.
+            if (favoritos.includes(this.#id)) {
+                const index = favoritos.indexOf(this.#id);
+                favoritos.splice(index, 1);
+            } else {
+                favoritos.push(this.#id);
+            }
+            
+            usuario.favoritos = favoritos;
+            modificarUsuario(usuario);
+        });
 
         const iconFav = document.createElement('i');
         iconFav.classList.add('fa-solid', 'fa-heart');
