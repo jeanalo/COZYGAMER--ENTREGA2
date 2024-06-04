@@ -55,4 +55,38 @@ const render = async () => {
     displayForYou(juegos);
 };
 
-document.addEventListener('DOMContentLoaded', render);
+// barradebusqueda
+
+const renderData = async (searchInput) => {
+    const data = await getData();
+    const cleanText = searchInput.toLowerCase();
+    console.log(cleanText);
+    const list = document.querySelector('.swiper-wrapper');
+    list.innerHTML = '';
+    
+    for(const juego of juegos.data){        
+        if(juego.id === null || juego.titulo === null || juego.estudio === null || juego.descripcion === null || juego.imagen === null || juego.link === null){
+        }
+        else {
+            const juegosInstance = new Juego(juego.id, juego.titulo, juego.estudio, juego.descripcion, juego.imagen, juego.link);
+            const juegoCard = juegosInstance.renderGameCard();
+            
+            if (cleanText === '' || juego.displayName.toLowerCase().includes(cleanText)) {         
+                list.appendChild(juegoCard);
+                juegosInstance.addEventListeners();
+            }    
+        }
+    }
+}
+
+const print = async () => {
+    await renderData('');
+
+    const searchBar = document.querySelector('#explore__search-SearchBar');
+    searchBar.addEventListener("input", async (event) => {
+        const searchText = event.target.value;
+        await renderData(searchText);
+    });
+};
+
+document.addEventListener('DOMContentLoaded', render, print);
