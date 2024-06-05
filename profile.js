@@ -35,7 +35,23 @@ const render = async () => {
 
         const firtName = e.target['user-fname'].value ? e.target['user-fname'].value : usuarioActivo.name;
         const lastName = e.target['user-lname'].value  ? e.target['user-lname'].value : usuarioActivo.lastName;
-        const email = e.target['user-email'].value ? e.target['user-email'].value : usuarioActivo.email;
+        let email;
+        
+        const userList = JSON.parse(localStorage.getItem('usuarios'));
+        if(e.target['user-email'].value){
+            for(const usuario of userList){
+                if(usuario.email === e.target['user-email'].value){
+                    alert('El correo ya esta en uso');
+                    email = usuarioActivo.email;
+                }
+                else{
+                    email = e.target['user-email'].value;
+                }
+            }
+        }
+        else {
+            email = usuarioActivo.email;
+        }
         
         // Logica para el cambio de password
         let userPassword;
