@@ -49,6 +49,15 @@ const render = async () => {
         return;
     }
 
+    await renderData('');
+
+    const searchBar = document.querySelector('#explore__search-SearchBar');
+    searchBar.addEventListener("input", async (event) => {
+        const searchText = event.target.value;
+        await renderData(searchText);
+    });
+
+
     const juegos = await getData();
     
     displayCards(juegos);
@@ -61,32 +70,23 @@ const renderData = async (searchInput) => {
     const data = await getData();
     const cleanText = searchInput.toLowerCase();
     console.log(cleanText);
-    const list = document.querySelector('.swiper-wrapper');
+    const list = document.querySelector('.list-items');
     list.innerHTML = '';
     
-    for(const juego of juegos.data){        
+    for(const juego of data){        
         if(juego.id === null || juego.titulo === null || juego.estudio === null || juego.descripcion === null || juego.imagen === null || juego.link === null){
+            continue;
         }
         else {
-            const juegosInstance = new Juego(juego.id, juego.titulo, juego.estudio, juego.descripcion, juego.imagen, juego.link);
+            const juegosInstance = new Juego(juego.id, juego.descripcion, juego.estudio, juego.titulo, juego.imagen, juego.link);
             const juegoCard = juegosInstance.renderGameCard();
             
-            if (cleanText === '' || juego.displayName.toLowerCase().includes(cleanText)) {         
+            if (cleanText === '' || juego.titulo.toLowerCase().includes(cleanText)) {         
                 list.appendChild(juegoCard);
                 juegosInstance.addEventListeners();
             }    
         }
     }
-}
-
-const print = async () => {
-    await renderData('');
-
-    const searchBar = document.querySelector('#explore__search-SearchBar');
-    searchBar.addEventListener("input", async (event) => {
-        const searchText = event.target.value;
-        await renderData(searchText);
-    });
 };
 
-document.addEventListener('DOMContentLoaded', render, print);
+document.addEventListener('DOMContentLoaded', render);

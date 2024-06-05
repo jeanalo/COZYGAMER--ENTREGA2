@@ -31,7 +31,7 @@ export const registrarUsuario = (event) => {
     ) {
         alert('Por favor, llena los campos');
     } else if (usuarioRegistrado.find(user => user.email === userEmail.value)) {
-        alert('El usuario ya se encuentra registrado');
+        alert('El correo ya se encuentra registrado');
     } else {
         usuarioRegistrado.push(usuarioNuevo);
         localStorage.setItem(USUARIOS_KEY, JSON.stringify(usuarioRegistrado));
