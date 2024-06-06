@@ -1,3 +1,4 @@
+// SIGNUP
 const USUARIOS_KEY = "usuarios";
 const USUARIO_ACTIVO_KEY = "usuario-activo";
 export const usuarioRegistrado = JSON.parse(localStorage.getItem(USUARIOS_KEY)) || [];
@@ -8,7 +9,7 @@ export const obtenerUsuarios = () => {
     }
     return JSON.parse(usuarios);
 };
-
+// SIGN UP
 export const registrarUsuario = (event) => {
     event.preventDefault();
 
@@ -38,7 +39,7 @@ export const registrarUsuario = (event) => {
         window.location.href = 'login.html';
     }
 };
-
+// MODIFY USER
 export const modificarUsuario = (modifiedUser) => {
     const usuarios = obtenerUsuarios();
     for(const usuario of usuarios){
@@ -52,7 +53,7 @@ export const modificarUsuario = (modifiedUser) => {
         }
     }
 };
-
+// LOG IN
 export const login = (correo, contrasena) => {
     const usuarios = obtenerUsuarios();
     for (const usuario of usuarios) {
@@ -63,7 +64,7 @@ export const login = (correo, contrasena) => {
     }
     throw new Error("Usuario y/o contraseña incorrectos");
 };
-
+// LOG IN
 export const obtenerUsuarioEnSesion = () => {
     const usuarioActivo = localStorage.getItem(USUARIO_ACTIVO_KEY);
     if (!usuarioActivo) {
