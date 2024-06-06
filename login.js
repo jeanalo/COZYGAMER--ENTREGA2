@@ -1,6 +1,13 @@
 import { login, obtenerUsuarioEnSesion, logout } from "./session.js";
 
 const render = () => {
+
+    const usuarioActivo = obtenerUsuarioEnSesion();
+
+    if(usuarioActivo) {
+        window.location.href = "/main.html";
+    }
+
     const formularioLogin = document.getElementById("login");
     const emailInput = document.getElementById("correo");
     const passwordInput = document.getElementById("contrasena");
